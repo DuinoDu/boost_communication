@@ -1,1 +1,0 @@
-/home/duino/project/cpp/opencv_socket/build-server-Desktop_Qt_5_6_0_GCC_64bit-Debug/CMakeFiles/server.dir
