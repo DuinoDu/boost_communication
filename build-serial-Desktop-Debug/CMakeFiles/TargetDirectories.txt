@@ -1,0 +1,1 @@
+/home/duino/project/cpp/boost/build-serial-Desktop-Debug/CMakeFiles/serial.dir
