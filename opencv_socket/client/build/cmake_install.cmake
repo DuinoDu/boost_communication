@@ -1,4 +1,4 @@
-# Install script for directory: /home/duino/project/cpp/opencv_socket/client
+# Install script for directory: /home/duino/project/cpp/boost_communication/opencv_socket/client
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-file(WRITE "/home/duino/project/cpp/opencv_socket/client/build/${CMAKE_INSTALL_MANIFEST}" "")
+file(WRITE "/home/duino/project/cpp/boost_communication/opencv_socket/client/build/${CMAKE_INSTALL_MANIFEST}" "")
 foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "/home/duino/project/cpp/opencv_socket/client/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  file(APPEND "/home/duino/project/cpp/boost_communication/opencv_socket/client/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 endforeach()

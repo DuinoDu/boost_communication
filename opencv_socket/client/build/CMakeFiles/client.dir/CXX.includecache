@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/duino/project/cpp/opencv_socket/client/main.cpp
+/home/duino/project/cpp/boost_communication/opencv_socket/client/main.cpp
 iostream
 -
 string
@@ -20,7 +20,7 @@ boost/asio.hpp
 boost/array.hpp
 -
 opencv2/opencv.hpp
-/home/duino/project/cpp/opencv_socket/client/opencv2/opencv.hpp
+/home/duino/project/cpp/boost_communication/opencv_socket/client/opencv2/opencv.hpp
 
 /usr/local/include/opencv/cxcore.h
 opencv2/core/core_c.h

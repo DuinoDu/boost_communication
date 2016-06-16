@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/duino/project/cpp/opencv_socket/client/main.cpp" "/home/duino/project/cpp/opencv_socket/client/build/CMakeFiles/client.dir/main.cpp.o"
+  "/home/duino/project/cpp/boost_communication/opencv_socket/client/main.cpp" "/home/duino/project/cpp/boost_communication/opencv_socket/client/build/CMakeFiles/client.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

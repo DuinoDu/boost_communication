@@ -14,6 +14,10 @@ Mat frame = Mat::zeros( 320, 640, CV_8UC3);
 
 void serverCapture(){
 
+    cout << "serverCapture1" << endl;
+    cout << "serverCapture2" << endl;
+    cout << "serverCapture3" << endl;
+
     VideoCapture cap(0);
     if(!cap.isOpened()){
         cerr << "Fail to open camera";
@@ -26,9 +30,10 @@ void serverCapture(){
     while (true){
         // get image
         cap >> frame;
-        imshow("server", frame);
+        //imshow("server", frame);
         waitKey(100);
     }
+    cap.release();
 }
 
 int main(int argc, char *argv[])
@@ -38,14 +43,15 @@ int main(int argc, char *argv[])
     try{
         boost::asio::io_service io;
         tcp::acceptor acceptor(io, tcp::endpoint(tcp::v4(), 3200));
-
+    
+        // main loop
         for(;;){
 
             // socket
             tcp::socket socket(io);
             acceptor.accept(socket);
             //cout << "client: " << socket.remote_endpoint().address() << endl;
-
+            
             Mat imgSend = Mat::zeros(1, 230400, CV_8U);
             imgSend = (frame.reshape(0,1));
 
@@ -60,8 +66,9 @@ int main(int argc, char *argv[])
     catch(exception& e){
         cerr << e.what() << endl;
     }
-
+    
+    // block main thread until thrd finish.
     thrd.join();
-
+    
     return 0;
 }

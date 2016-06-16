@@ -10,8 +10,16 @@ using boost::asio::ip::tcp;
 using namespace std;
 using namespace cv;
 
-int main()
+int main(int argc, char* argv[])
 {
+    string ipAddr;
+    if(argc == 2){ 
+        ipAddr = argv[1];
+    }
+    else if( argc == 1){ 
+        ipAddr = "127.0.0.1";
+    }
+
     boost::array<char, 230400> buf;
 
     while(true){
@@ -19,9 +27,14 @@ int main()
 
             // socket receive
             boost::asio::io_service io;
-            tcp::endpoint endpoint(boost::asio::ip::address::from_string("127.0.0.1"), 3200);
+            tcp::endpoint endpoint(boost::asio::ip::address::from_string(ipAddr), 3200);
             tcp::socket socket(io);
+
+            cout << "waiting to connet to " << ipAddr << endl;
             socket.connect(endpoint);
+
+            cout << "Remote server IP: " << socket.remote_endpoint().address().to_string() << endl;
+
             boost::system::error_code ec;
             size_t len = socket.read_some( boost::asio::buffer(buf), ec);
 

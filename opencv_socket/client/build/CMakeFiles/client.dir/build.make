@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/duino/project/cpp/opencv_socket/client
+CMAKE_SOURCE_DIR = /home/duino/project/cpp/boost_communication/opencv_socket/client
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/duino/project/cpp/opencv_socket/client/build
+CMAKE_BINARY_DIR = /home/duino/project/cpp/boost_communication/opencv_socket/client/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/client.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/client.dir/flags.make
 
 CMakeFiles/client.dir/main.cpp.o: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/main.cpp.o: ../main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/duino/project/cpp/opencv_socket/client/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/duino/project/cpp/boost_communication/opencv_socket/client/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/client.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/client.dir/main.cpp.o -c /home/duino/project/cpp/opencv_socket/client/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/client.dir/main.cpp.o -c /home/duino/project/cpp/boost_communication/opencv_socket/client/main.cpp
 
 CMakeFiles/client.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/duino/project/cpp/opencv_socket/client/main.cpp > CMakeFiles/client.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/duino/project/cpp/boost_communication/opencv_socket/client/main.cpp > CMakeFiles/client.dir/main.cpp.i
 
 CMakeFiles/client.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/duino/project/cpp/opencv_socket/client/main.cpp -o CMakeFiles/client.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/duino/project/cpp/boost_communication/opencv_socket/client/main.cpp -o CMakeFiles/client.dir/main.cpp.s
 
 CMakeFiles/client.dir/main.cpp.o.requires:
 .PHONY : CMakeFiles/client.dir/main.cpp.o.requires
@@ -141,6 +141,6 @@ CMakeFiles/client.dir/clean:
 .PHONY : CMakeFiles/client.dir/clean
 
 CMakeFiles/client.dir/depend:
-	cd /home/duino/project/cpp/opencv_socket/client/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/duino/project/cpp/opencv_socket/client /home/duino/project/cpp/opencv_socket/client /home/duino/project/cpp/opencv_socket/client/build /home/duino/project/cpp/opencv_socket/client/build /home/duino/project/cpp/opencv_socket/client/build/CMakeFiles/client.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/duino/project/cpp/boost_communication/opencv_socket/client/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/duino/project/cpp/boost_communication/opencv_socket/client /home/duino/project/cpp/boost_communication/opencv_socket/client /home/duino/project/cpp/boost_communication/opencv_socket/client/build /home/duino/project/cpp/boost_communication/opencv_socket/client/build /home/duino/project/cpp/boost_communication/opencv_socket/client/build/CMakeFiles/client.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/client.dir/depend
 

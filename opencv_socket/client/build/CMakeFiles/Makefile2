@@ -47,10 +47,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/duino/project/cpp/opencv_socket/client
+CMAKE_SOURCE_DIR = /home/duino/project/cpp/boost_communication/opencv_socket/client
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/duino/project/cpp/opencv_socket/client/build
+CMAKE_BINARY_DIR = /home/duino/project/cpp/boost_communication/opencv_socket/client/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/client.dir
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/duino/project/cpp/opencv_socket/client/build
 CMakeFiles/client.dir/all:
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/depend
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/duino/project/cpp/opencv_socket/client/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/duino/project/cpp/boost_communication/opencv_socket/client/build/CMakeFiles  1
 	@echo "Built target client"
 .PHONY : CMakeFiles/client.dir/all
 
@@ -69,9 +69,9 @@ all: CMakeFiles/client.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/duino/project/cpp/opencv_socket/client/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/duino/project/cpp/boost_communication/opencv_socket/client/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/duino/project/cpp/opencv_socket/client/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/duino/project/cpp/boost_communication/opencv_socket/client/build/CMakeFiles 0
 .PHONY : CMakeFiles/client.dir/rule
 
 # Convenience name for target.

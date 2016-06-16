@@ -1,1 +1,1 @@
-/home/duino/project/cpp/opencv_socket/client/build/CMakeFiles/client.dir
+/home/duino/project/cpp/boost_communication/opencv_socket/client/build/CMakeFiles/client.dir
